@@ -483,6 +483,29 @@ h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
     font-size: 15px;
 }
 
+/* Featured/Highlighted Feature Cards */
+.feature-card.featured-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    position: relative;
+}
+
+.feature-card.featured-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 20%;
+    right: 20%;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 0 0 4px 4px;
+}
+
+.feature-icon-highlight {
+    background: var(--gradient-primary);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35);
+}
+
 /* How It Works */
 .how-it-works {
     padding: 100px 0;
